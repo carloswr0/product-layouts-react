@@ -1,0 +1,332 @@
+main#fylo-grid {
+    --SoftBlue: hsl(243, 86%, 85%);
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --Green: hsl(163, 95%, 43%);
+    --DarkBlue: hsl(243, 58%, 33%);
+    --Gray: hsl(0, 0%, 50%);
+}
+
+/*Containers and Sub Containers*/
+main#fylo-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 375px;
+    box-sizing: border-box;
+}
+main#fylo-grid > * {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+main#fylo-grid .flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#fylo-grid .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main#fylo-grid .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main#fylo-grid .flex-start{
+    justify-content: start;
+}
+main#fylo-grid .flex-end{
+    align-items: flex-end;
+}
+main#fylo-grid .flex {
+    display: flex;
+}
+main#fylo-grid .flex-1 {
+    flex: 1;
+}
+main#fylo-grid .flex-2 {
+    flex: 2;
+}
+main#fylo-grid .text-center {
+    text-align: center;
+}
+main#fylo-grid .padding-for-grid {
+    padding: 0rem 2rem 2rem 2rem;
+}
+main#fylo-grid .twenty-percent-padding {
+    padding: 0 20%;
+}
+/*Containers and Sub Containers*/
+
+/*Header*/
+main#fylo-grid header {
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    display: flex;
+    flex: 1;
+}
+main#fylo-grid .header-options {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
+main#fylo-grid .logo-size {
+    width: 6rem;
+}
+/*Header*/
+
+/*Footer*/
+main#fylo-grid footer {
+    background: var(--VeryDarkBlue);
+    color: white;
+}
+main#fylo-grid .white-separations {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 1rem;
+}
+main#fylo-grid .icon {
+    width: 18px;
+    height: 18px;
+}
+/*Footer*/
+
+/*Typed Classes*/
+main#fylo-grid h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+main#fylo-grid h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+main#fylo-grid p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+main#fylo-grid b {
+    font-size: 1rem;
+    font-weight: 700;
+}
+main#fylo-grid small {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+main#fylo-grid #testimonials p {
+    margin-bottom: 0rem;
+}
+main#fylo-grid label {
+    font-size: 1rem;
+    font-weight: 400;
+}
+main#fylo-grid span {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+main#fylo-grid li {
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+main#fylo-grid li:hover {
+    text-decoration: underline;
+}
+main#fylo-grid footer li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-content: center;
+}
+main#fylo-grid footer li:hover {
+    text-decoration: none;
+}
+/*Typed Classes*/
+
+/*Images*/
+main#fylo-grid .keep-aspect-ratio {
+    max-width: 100%;
+    object-fit: contain;
+}
+/*Images*/
+
+/*Inputs*/
+main#fylo-grid input {
+    height: 2rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+/*Inputs*/
+
+/*Buttons*/
+main#fylo-grid button {
+    background-color: var(--Green);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 3px;
+    border-style: none;
+    cursor: pointer;
+    border: 3px solid var(--Green);
+    transition: all 0.2s;
+    height: 2rem;
+}
+main#fylo-grid button:hover {
+    background-color: white;
+    color: var(--Green);
+    border: 3px solid var(--Green)
+}
+main#fylo-grid #get-started button {
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+}
+/*Buttons*/
+
+/*Colors*/
+main#fylo-grid .color-vdarkb {
+    color: var(--VeryDarkBlue);
+}
+main#fylo-grid .color-darkb {
+    color: var(--DarkBlue);
+}
+main#fylo-grid .color-green {
+    color: var(--Green);
+}
+main#fylo-grid .color-white {
+    color: white;
+}
+main#fylo-grid .color-softb {
+    color: var(--SoftBlue);
+}
+main#fylo-grid .color-gray {
+    color: var(--Gray);
+}
+/*Colors*/
+
+/*RazorBlade Divs*/
+main#fylo-grid .razor-blade-gradient {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(120deg, rgba(7,4,57,1) 25%, rgba(187,184,250,1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+main#fylo-grid .razor-blade-gradient::after {
+    background: linear-gradient(120deg, rgba(7,4,57,1) 25%, rgba(187,184,250,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(3deg);
+}
+main#fylo-grid .razor-blade {
+    position: relative;
+    z-index: 0;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+main#fylo-grid .razor-blade::after {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(3deg);
+}
+/*RazorBlade Divs*/
+
+/*Get started Forms*/
+main#fylo-grid #get-started-form {
+    width: 100%;
+}
+main#fylo-grid #get-started-form input {
+    margin-right: 1rem;
+}
+main#fylo-grid #get-started-form button {
+    width: 8rem;
+    height: 36px;
+}
+/*Get started Forms*/
+
+@media only screen and (max-width: 800px) { 
+   
+    main#fylo-grid .flex-row-to-column {
+        flex-direction: column!important;
+    }
+    main#fylo-grid .responsive-position-1 {
+        order: 1;
+    }
+    main#fylo-grid .responsive-position-2 {
+        order: 2;
+    }
+    main#fylo-grid h1 {
+        text-align: center;
+    }
+    main#fylo-grid .responsive-center-align {
+        align-items: center;
+    }
+    main#fylo-grid .padding-for-grid {
+        padding: 0rem 0rem 1rem 0rem;
+    }
+    main#fylo-grid .twenty-percent-padding {
+        padding: 0 0%;
+    }
+    main#fylo-grid #get-started-form input {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+    main#fylo-grid #get-started-form button {
+        width: auto;
+        height: 36px;
+    }
+    main#fylo-grid footer {
+        padding: 0 3rem;
+    }
+    main#fylo-grid .white-separations {
+        border-right: none;
+        border-left: none;
+        padding: 0;
+        order: 3;
+    }
+    main#fylo-grid .white-separations > ul {
+        margin-bottom: 3rem;
+    }
+    main#fylo-grid .white-separations > ul >:first-child{
+        margin-bottom: 2rem;
+    }
+    main#fylo-grid .footer-options >*:first-child {
+        order: 1;
+        flex: none;
+        margin-bottom: 2rem;
+    }
+    main#fylo-grid .footer-options >*:last-child {
+        padding: 0!important;
+        order: 2;
+        flex: none;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

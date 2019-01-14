@@ -1,0 +1,131 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+main#landing-page-single-section {
+    min-width: 375px;
+    /*max-width: 1440px;*/
+    --primary--color: hsl(257, 40%, 49%);
+    min-height: 100vh;
+    background: url(./assets/images/bg-desktop.svg);
+    background-color: var(--primary--color);
+    box-sizing: border-box;
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Neither Header or Logo has additional Styling */ 
+
+main#landing-page-single-section #middle-container {
+    display: flex;
+    flex-direction: row;
+}
+
+main#landing-page-single-section #middle-container > * {
+    flex: 1;
+}
+
+main#landing-page-single-section #middle-paragraph {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+}
+
+main#landing-page-single-section #middle-picture .picture-wrapper {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+main#landing-page-single-section #middle-paragraph .paragraph-wrapper {
+    margin: 0 2.5rem;
+}
+
+main#landing-page-single-section .middle-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem!important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+main#landing-page-single-section .middle-paragraph {
+    line-height: 1.5rem;
+}
+
+main#landing-page-single-section .button {
+    cursor: pointer;
+    background-color: white;
+    color: var(--primary--color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: 120px;
+    border: 2px solid white;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 0px #00000042;
+    margin: 2rem 0 0 0;
+}
+
+main#landing-page-single-section .button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: var(--primary--color);
+}
+
+main#landing-page-single-section footer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main#landing-page-single-section #rss-container {
+    display: flex;
+}
+
+main#landing-page-single-section #rss-container > * {
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main#landing-page-single-section #rss-container > *:nth-child(2) {
+    margin: 0 5px;
+}
+
+main#landing-page-single-section #rss-container > *:hover {
+    color: var(--primary--color);
+    background-color: white;
+}
+
+@media only screen and (max-width: 850px) {
+    main#landing-page-single-section #middle-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main#landing-page-single-section footer {
+        justify-content: center;
+    }
+
+    main#landing-page-single-section .paragraph-wrapper {
+        text-align: center;
+        margin: 0!important;
+    }
+    
+    main#landing-page-single-section #middle-container section:first-child {
+        display: flex;
+        justify-content: center;
+    }
+}

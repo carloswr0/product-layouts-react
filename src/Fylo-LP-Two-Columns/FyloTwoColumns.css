@@ -1,0 +1,292 @@
+#fylo-two-columns {
+    --Darkblue: hsl(243, 87%, 12%); /* background & title */
+    --DesaturatedBlue: hsl(238, 22%, 44%); /* last section */
+    --BrightBlue: hsl(224, 93%, 58%); /* button */
+    --ModerateCyan: hsl(170, 45%, 43%); /* link */
+    --LightGrayishBlue: hsl(240, 75%, 98%); /* background */
+    --LightGray: hsl(0, 0%, 75%); /* text */
+}
+
+/*Main Container & Sub Container*/
+main#fylo-two-columns {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--LightGrayishBlue);
+    min-width: 375px;
+    box-sizing: border-box;
+}
+
+main#fylo-two-columns > * {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+main#fylo-two-columns .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main#fylo-two-columns .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main#fylo-two-columns .flex-column .flex-start{
+    justify-content: start;
+}
+main#fylo-two-columns .flex {
+    display: flex;
+}
+main#fylo-two-columns .flex-2 {
+    flex: 2;
+}
+main#fylo-two-columns .flex-1 {
+    flex: 1;
+}
+main#fylo-two-columns .flex-2 {
+    flex: 2;
+}
+main#fylo-two-columns .flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#fylo-two-columns #get-started {
+    background-color: var(--DesaturatedBlue);
+}
+main#fylo-two-columns footer {
+    background-color: var(--Darkblue);
+    color: var(--LightGrayishBlue);
+}
+main#fylo-two-columns .how-it-works {
+    height: 1.2rem;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+main#fylo-two-columns #get-started div{
+    padding: 0 2rem;
+}
+main#fylo-two-columns #testimonials {
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 1px #00000054;
+    padding: 1rem;    
+}
+/*Main Container & Sub Container*/
+
+
+/*Header*/
+main#fylo-two-columns header {
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+main#fylo-two-columns .header-options {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+/*Header*/
+
+/*Colors*/
+main#fylo-two-columns .color-darkb {
+    color: var(--Darkblue);
+}
+main#fylo-two-columns .color-desab {
+    color: var(--DesaturatedBlue);
+}
+main#fylo-two-columns .color-white {
+    color: var(--LightGrayishBlue);
+}
+main#fylo-two-columns .color-cyan {
+    color: var(--ModerateCyan);
+}
+/*Colors*/
+
+
+/*Typed Classes*/
+main#fylo-two-columns h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+main#fylo-two-columns p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+main#fylo-two-columns b {
+    font-size: 1rem;
+    font-weight: 700;
+}
+main#fylo-two-columns small {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+main#fylo-two-columns #testimonials p {
+    margin-bottom: 0rem;
+}
+main#fylo-two-columns label {
+    font-size: 1rem;
+    font-weight: 400;
+}
+main#fylo-two-columns span {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+main#fylo-two-columns li {
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+main#fylo-two-columns li:hover {
+    text-decoration: underline;
+}
+main#fylo-two-columns footer li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-content: center;
+}
+main#fylo-two-columns footer li:hover {
+    text-decoration: none;
+}
+/*Typed Classes*/
+
+/*Images*/
+main#fylo-two-columns .keep-aspect-ratio {
+    max-width: 100%;
+    object-fit: contain;
+}
+/*Images*/
+
+/*Inputs*/
+main#fylo-two-columns input {
+    height: 2rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+/*Inputs*/
+
+/*Buttons*/
+main#fylo-two-columns button {
+    background-color: var(--BrightBlue);
+    color: var(--LightGrayishBlue);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 3px;
+    border-style: none;
+    cursor: pointer;
+    border: 3px solid var(--BrightBlue);
+    transition: all 0.2s;
+    height: 2rem;
+}
+main#fylo-two-columns button:hover {
+    background-color: var(--LightGrayishBlue);
+    color: var(--BrightBlue);
+    border: 3px solid var(--BrightBlue)
+}
+main#fylo-two-columns #get-started button {
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+}
+/*Buttons*/
+
+
+@media only screen and (max-width: 800px) { 
+   
+    main#fylo-two-columns > * {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    main#fylo-two-columns footer {
+        padding: 2rem!important;
+        
+    }
+    main#fylo-two-columns >:first-child {
+        flex-direction: row;
+    }
+    main#fylo-two-columns .responsive-position {
+        order: 2;
+    }
+    main#fylo-two-columns .responsive-column {
+        flex-direction: column!important;
+    }
+    main#fylo-two-columns .responsive-column button{
+        margin-left: 0rem!important;
+        margin-top: 1rem;
+    }
+    main#fylo-two-columns .flex-column .responsive-flex-center{
+        justify-content: center;
+    }
+    main#fylo-two-columns .img-container {
+        margin-bottom: 2rem;
+    }
+    main#fylo-two-columns h1 {
+        text-align: center;
+    }
+    main#fylo-two-columns p {
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    main#fylo-two-columns #testimonials {
+        margin: 1rem 2rem;
+    }
+    main#fylo-two-columns #get-started button {
+        width: 100%;
+    }
+    main#fylo-two-columns .footer-options > * {
+        margin-bottom: 2rem;
+    }
+    main#fylo-two-columns .footer-options > :last-child {
+        justify-content: center!important;
+    }
+}
+
+main#fylo-two-columns .logo-size {
+    width: 6rem;
+}
+
+main#fylo-two-columns .turn-white {
+    filter: brightness(0) invert(100);
+}   
+
+main#fylo-two-columns .img-container {
+    padding: 0 2rem;
+}
+
+main#fylo-two-columns .icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+main#fylo-two-columns .testimonial-avatar {
+    border-radius: 100%;
+    object-fit: contain;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+main#fylo-two-columns .footer-icons li {
+    margin-bottom: 0rem!important;
+}
+
+main#fylo-two-columns .footer-icons li:nth-child(2) {
+    margin: 0 1rem;
+}
+
+main#fylo-two-columns .footer-icons i {
+    border-radius: 100%;
+    border: 1px solid white;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,370 @@
+main#fylo-dark {
+    --DarkBlueIntroEmail : hsl(217, 28%, 15%); /* (intro and email sign up background) */
+    --DarkBlueMain : hsl(218, 28%, 13%); /* (main background) */
+    --DarkBlueFooter : hsl(216, 53%, 9%); /* (footer background) */
+    --DarkBlueTerstimonials : hsl(219, 30%, 18%); /* (testimonials background) */
+    --Cyan : hsl(176, 68%, 64%); /* (inside call-to-action gradient) */
+    --Blue : hsl(198, 60%, 50%); /* (inside call-to-action gradient) */
+    --White: hsl(0, 0%, 100%);
+}
+
+/*Containers and Sub Containers*/
+main#fylo-dark {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--DarkBlueMain);
+    min-width: 375px;
+    box-sizing: border-box;
+}
+main#fylo-dark > * {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+main#fylo-dark >:last-child {
+    background-color: var(--DarkBlueFooter);
+    
+}
+main#fylo-dark >:first-child {
+    background-color: var(--DarkBlueIntroEmail);
+}
+main#fylo-dark >:nth-child(2) {
+    background-color: var(--DarkBlueIntroEmail);
+    background-image: url('./assets/images/bg-curvy-desktop.svg');
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+main#fylo-dark > section {
+    margin-bottom: 3rem;
+} 
+main#fylo-dark .flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#fylo-dark .just-center {
+    align-items: center;
+}
+main#fylo-dark .grid-row:first-child {
+    margin-bottom: 5rem;
+}
+main#fylo-dark .grid-row {
+    width: 85%;
+}
+main#fylo-dark .grid-row > div{
+    padding: 0 4rem;
+}
+main#fylo-dark .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main#fylo-dark .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main#fylo-dark .flex-start{
+    justify-content: start;
+}
+main#fylo-dark .flex-end{
+    align-items: flex-end;
+}
+main#fylo-dark .flex {
+    display: flex;
+}
+main#fylo-dark .flex-1 {
+    flex: 1;
+}
+main#fylo-dark .flex-2 {
+    flex: 2;
+}
+main#fylo-dark .text-center {
+    text-align: center;
+}
+main#fylo-dark .how-it-works {
+    height: 1.2rem;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+main#fylo-dark .spacing {
+    padding: 0 4rem;
+}
+main#fylo-dark .poster-spacing {
+    padding: 0 25% 2rem 25%;
+}
+/*Containers and Sub Containers*/
+
+/*Header*/
+main#fylo-dark header {
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    display: flex;
+    flex: 1;
+}
+main#fylo-dark .header-options {
+    display: flex;
+    justify-content: space-between;
+}
+main#fylo-dark .logo-size {
+    width: 6rem;
+    max-height: 29px;
+}
+main#fylo-dark .responsive-logo-size {
+    width: 6rem;
+    max-height: 29px;
+}
+main#fylo-dark .header-options > *:nth-child(2) {
+    margin: 0 1rem;
+}
+/*Header*/
+
+/*Testimonials*/
+main#fylo-dark .testimonials {
+    border-radius: 3px;
+    box-shadow: 6px 6px 0px 0px var(--DarkBlueIntroEmail);
+    padding: 1rem;
+    background: var(--DarkBlueTerstimonials);
+}
+main#fylo-dark .testimonials p {
+    margin-bottom: 0rem;
+}
+main#fylo-dark .testimonials {
+    margin: 1rem 2rem;
+}
+main#fylo-dark .testimonial-avatar {
+    border-radius: 100%;
+    object-fit: contain;
+    width: 3rem;
+    margin-right: 1rem;
+}
+/*Testimonials*/
+
+/*EarlyAcess*/
+main#fylo-dark #early-access {
+    background: rgb(24,31,42);
+    background: linear-gradient(180deg, rgba(24,31,42,1) 50%, rgba(11,21,35,1) 50%); 
+    margin-bottom: 0rem!important;  
+    justify-content: center;
+   
+}
+main#fylo-dark #early-access > div {
+    box-shadow: 6px 6px #0000002b;
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: var(--DarkBlueIntroEmail);
+}
+/*EarlyAcess*/
+
+/*Footer*/
+main#fylo-dark .icon {
+    width: 18px;
+    height: 18px;
+}
+main#fylo-dark .location-icon {
+    max-height: 18px;
+    width: 13px;
+}
+main#fylo-dark .footer-icons i {
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#fylo-dark .footer-icons > *:nth-child(2) {
+    margin: 0 1rem;
+}
+/*Footer*/
+
+/*Typed Classes*/
+main#fylo-dark h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--White);
+}
+main#fylo-dark h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--White);
+}
+main#fylo-dark p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--White);
+    line-height: 1.5rem;
+}
+main#fylo-dark b {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--White);
+}
+main#fylo-dark small {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: var(--White);
+}
+main#fylo-dark label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--White);
+}
+main#fylo-dark span {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--White);
+}
+main#fylo-dark li {
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--White);
+}
+main#fylo-dark li:hover {
+    text-decoration: underline;
+}
+main#fylo-dark footer li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-content: center;
+    color: var(--White);
+}
+main#fylo-dark footer li:hover {
+    text-decoration: none;
+}
+/*Typed Classes*/
+
+/*Images*/
+main#fylo-dark .keep-aspect-ratio {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+main#fylo-dark .keep-aspect-ratio-vertically {
+    max-height: 50%;
+    object-fit: contain;
+} 
+main#fylo-dark .quotes {
+    position: absolute;
+    width: 40px;
+}
+/*Images*/
+
+/*Inputs*/
+main#fylo-dark input {
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 55px;
+    padding-left: 25px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+/*Inputs*/
+
+/*Buttons*/
+main#fylo-dark button {
+    background-color: var(--Blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    border-style: none;
+    cursor: pointer;
+    border: 3px solid var(--Blue);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 2.5rem;
+    width: 14rem;
+}
+main#fylo-dark button:hover {
+    background-color: white;
+    color: var(--Blue);
+    border: 3px solid var(--Blue)
+}
+/*Buttons*/
+
+/*Colors*/
+main#fylo-dark .color-white {
+    color: white;
+}
+main#fylo-dark .color-cyan {
+    color: var(--Cyan);
+}
+
+main#fylo-dark .turn-white {
+    filter: brightness(100);
+}
+/*Colors*/
+
+main#fylo-dark #early-access-form > *:first-child{
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 900px) { 
+    main#fylo-dark .flex-row-to-column {
+        flex-direction: column!important;
+    }
+    main#fylo-dark .poster-spacing {
+        padding: 2rem;
+    }
+    main#fylo-dark .spacing {
+        padding: 0rem;
+    }
+    main#fylo-dark button {
+        height: 3.5rem!important;
+    }
+    main#fylo-dark .grid-row:first-child {
+        margin-bottom: 0rem;
+    }
+    main#fylo-dark .grid-row > div {
+        margin-bottom: 4rem;
+    }
+    main#fylo-dark .grid-row > div {
+        padding: 0 0rem; 
+    }
+    main#fylo-dark .grid-row:last-child > div:last-child {
+        margin-bottom: 0rem;
+    }
+    main#fylo-dark .responsive-text-center {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    main#fylo-dark > section {
+        margin-bottom: 0rem!important;
+    }
+    main#fylo-dark #early-access-form > *{
+        width: 100%;
+    }
+    main#fylo-dark #early-access-form > *:first-child{
+        margin: 0px;
+        margin-bottom: 1rem;
+    }
+    main#fylo-dark #early-access-form > *:last-child{
+        margin: 0px;
+    }
+    main#fylo-dark .responsive-center {
+        justify-content: center;
+    }
+    main#fylo-dark .responsive-logo-size {
+        width: auto;
+        max-height: none;
+        padding: 2rem 0;
+        margin-left: 1rem;
+    }
+    main#fylo-dark #footer-options {
+        margin: 2rem 0;
+    }  
+    main#fylo-dark .last-child {
+        margin-top: 0rem!important;
+    }
+}

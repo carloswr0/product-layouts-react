@@ -1,0 +1,113 @@
+section#lobby * {
+    box-sizing: border-box;
+}
+section#lobby {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+section#lobby h1{
+    padding: 1rem 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main#default {
+    background: url('../Huddle-LP-Single-Section/assets/images/bg-desktop.svg');
+    background-color: #4e0096;
+    padding: 0 10%;
+}
+
+main#default a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: inherit;
+}
+
+main#default .preview-img-container img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+main#default .lobby-element {
+    width: 250px;
+    margin: 0 10px;
+    margin-bottom: 2rem;
+    list-style: none;
+    position: relative;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 8px 8px #0000007d;
+    border: 3px solid#b768ff;;
+}
+main#default .lobby-element:hover {
+    transform: scale(1.05);
+}
+
+main#default .challenge-info-container {
+    color: black;
+}
+
+main#default .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main#default .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Header*/
+main#default header {
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    display: flex;
+    flex: 1;
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+main#default .header-options {
+    display: flex;
+    justify-content: space-between;
+}
+main#default .logo-size {
+    width: 6rem;
+    max-height: 29px;
+}
+main#default .responsive-logo-size {
+    width: 6rem;
+    max-height: 29px;
+}
+main#default .header-options > *:nth-child(2) {
+    margin: 0 1rem;
+}
+/*Header*/
+
+@media (max-width: 720px) {
+    main#default .lobby-element {
+        width: 100%;
+        height: auto;
+    }
+
+    main#default .row-to-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main#default .row-to-column > *{
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,161 @@
+#fylo-sign-up {
+    display: flex;
+    height: 100vh;
+    min-width: 375px;
+}
+
+#fylo-sign-up .flex {
+    display: flex;
+}
+
+#fylo-sign-up .flex1 {
+    flex: 1;
+}
+
+/* forms */
+#fylo-sign-up input {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    border-radius: 4px;
+    border-style: none;
+    -webkit-box-shadow: 2px 2px 3px 1px #00000045;
+    border: 1px solid #808080ba;
+            box-shadow: 2px 2px 3px 1px #00000045;
+    margin-right: 10px;
+    height: 35px;
+    padding-left: 10px;
+
+}
+#fylo-sign-up button {
+    flex: 1 1;
+    border-radius: 4px;
+    border-style: none;
+    box-shadow: 2px 2px 1px 1px #00000047;
+    background-color: hsl(163, 95%, 43%);
+    height: 37px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid hsl(163, 95%, 43%);
+    transition: 0.3s ease-in-out;
+}
+#fylo-sign-up button:hover {
+    background-color: white;
+    color: hsl(163, 95%, 43%);
+    border: 3px solid hsl(163, 95%, 43%);
+}
+/* forms */
+
+/* typed */
+#fylo-sign-up h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #070439;
+    margin-bottom: 2rem;
+}
+#fylo-sign-up h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #070439;
+    margin-bottom: 1rem;
+}
+#fylo-sign-up p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 3rem;
+}
+#fylo-sign-up .privacy {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* typed */
+
+#fylo-sign-up .justified {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fylo-sign-up .picture-wrapper {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+/*Separations*/
+#fylo-sign-up .justified:nth-child(1) {
+    background: #6db3f2; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #BBB8FA 0%,#130875 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #BBB8FA 0%,#130875 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #BBB8FA 0%,#130875 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* */
+    padding: 3rem;
+    flex-direction: column;
+}
+#fylo-sign-up .justified:nth-child(1) header {
+    display: none;
+}
+
+#fylo-sign-up .bottom {
+    /* */
+    padding: 3rem 2rem;
+    flex-direction: column;
+    
+}
+/*Separations*/
+
+/*Header*/
+#fylo-sign-up .icons > :nth-child(2) {
+    margin: 0 1.5rem;
+}
+#fylo-sign-up .fab {
+    font-size: 27px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+#fylo-sign-up header {
+    display: flex;
+    max-height: 35px;
+    width: 100%;
+    justify-content: space-between;
+}
+/*Header*/
+
+
+@media only screen and (max-width: 800px) {  
+    #fylo-sign-up {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    #fylo-sign-up .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    #fylo-sign-up input {
+        width: 70%;
+        margin-bottom: 1rem;
+        margin-right: 0px;
+    }
+    #fylo-sign-up button {
+        width: 30%;
+    }
+    #fylo-sign-up footer {
+        margin-top: 3rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    #fylo-sign-up .justified:nth-child(1) header {
+        filter: brightness(0%) invert(100%);
+        display: flex;
+    }
+    #fylo-sign-up .bottom header {
+       display: none;
+    }
+
+}
+
+

@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/96a71889-e269-4844-9d14-216f971c310f/deploy-status)](https://app.netlify.com/sites/elastic-hamilton-a8c651/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
